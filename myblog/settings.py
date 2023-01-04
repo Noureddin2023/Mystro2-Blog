@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'taggit',
     'django_summernote',
     'posts',
+    'postcbv',
     
     ]   
     
@@ -60,7 +61,7 @@ ROOT_URLCONF = 'myblog.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
