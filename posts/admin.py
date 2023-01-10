@@ -2,7 +2,7 @@ from django.contrib import admin
 from django_summernote.admin import SummernoteModelAdmin
 
 # Register your models here.
-from .models import Post
+from .models import Post , Category
 
 
 
@@ -15,4 +15,5 @@ class PostAdmin(SummernoteModelAdmin):  # instead of ModelAdmin
 
 
 
-#admin.site.register(Post,PostAdmin)
+admin.site.register(Post,PostAdmin)
+admin.site.register(Category)
