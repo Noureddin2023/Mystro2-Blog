@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'taggit',
     'django_summernote',
     'posts',
-    'postcbv',
+    'about',
+    #'postcbv',
     
     ]   
     
