@@ -54,7 +54,7 @@ class Experience(models.Model):
 
 class Service(models.Model):
     icon = models.CharField(max_length=20)
-    titel = models.CharField ( max_length=100)
+    titel = models.CharField (max_length=100)
     description = models.CharField(max_length=300)
 
     def __str__(self):
