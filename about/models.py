@@ -36,17 +36,19 @@ class Education(models.Model):
     titel = models.CharField ( max_length=100)
     place = models.CharField( max_length=50)
     description = models.CharField(max_length=300)
-    last = models.BooleanField(default=False)
+   # last = models.BooleanField(default=False)
 
     def __str__(self):
         return self.titel
+    class Meta:
+        ordering = ('-year',)    
 
 class Experience(models.Model):
     year = models.IntegerField()
     titel = models.CharField ( max_length=100)
     place = models.CharField( max_length=50)
     description = models.CharField(max_length=300)
-    last = models.BooleanField(default=False)
+   # last = models.BooleanField(default=False)
 
     def __str__(self):
         return self.titel

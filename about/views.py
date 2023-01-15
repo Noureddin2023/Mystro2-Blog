@@ -5,7 +5,7 @@ def home(request):
     about = About.objects.last()
     coding_skills = Skills.objects.filter(type='Coding')
     design_skills = Skills.objects.filter(type='Design')
-    education = Education.objects.all().order_by('-year')
+    education = Education.objects.all()
     experience = Experience.objects.all()
 
 
