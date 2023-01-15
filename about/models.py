@@ -11,7 +11,7 @@ class About(models.Model):
     lives_in = models.CharField(max_length=100)
     age = models.IntegerField()
     gender = models.CharField(max_length=10)
-
+    cv = models.FileField(upload_to='cv',help_text='upload you cv')
     def __str__(self):
         return self.name
 
@@ -32,7 +32,7 @@ class Skills(models.Model):
 
 
 class Education(models.Model):
-    year = models.CharField(max_length=100)
+    year = models.IntegerField()
     titel = models.CharField ( max_length=100)
     place = models.CharField( max_length=50)
     description = models.CharField(max_length=300)
@@ -42,7 +42,7 @@ class Education(models.Model):
         return self.titel
 
 class Experience(models.Model):
-    year = models.CharField(max_length=100)
+    year = models.IntegerField()
     titel = models.CharField ( max_length=100)
     place = models.CharField( max_length=50)
     description = models.CharField(max_length=300)
