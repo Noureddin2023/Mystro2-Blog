@@ -194,8 +194,8 @@
                 <div class="title">{{item.year}}</div>
                 <div class="details">
                   <h5>Specialize of course</h5>
-                  <small class="fg-theme">University of Study</small>
-                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p>
+                  <small class="fg-theme">{{item.place}}</small>
+                  <p>{{item.description}}</p>
                 </div>
               </li>
               {% endfor %}
@@ -204,9 +204,9 @@
           <div class="col-md-6 wow fadeInRight" data-wow-delay="200ms">
             <h2 class="fg-dark">Experience</h2>
             <ul class="timeline mt-4 pr-md-5">
-              {% for  in  %}
+              {% for item  in experience  %}
                <li>
-                  <div class="title">{{item.year}}</div>
+                  <div class="title">{{item.year}} {% if forloop.first %}Current{% endif %} </div>
                   <div class="details">
                    <h5>{{item}}</h5>
                    <small class="fg-theme">University of Study</small>

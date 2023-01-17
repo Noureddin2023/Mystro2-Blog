@@ -40,6 +40,8 @@ class Education(models.Model):
 
     def __str__(self):
         return self.titel
+
+        
     class Meta:
         ordering = ('-year',)    
 
