@@ -209,8 +209,8 @@
                   <div class="title">{{item.year}} {% if forloop.first %}Current{% endif %} </div>
                   <div class="details">
                    <h5>{{item}}</h5>
-                   <small class="fg-theme">University of Study</small>
-                   <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p>
+                   <small class="fg-theme">{{item.place}}</small>
+                   <p>{{item.description}}</p>
                  </div>
                </li>
               {% endfor %}
